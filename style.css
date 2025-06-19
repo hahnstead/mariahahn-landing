@@ -56,3 +56,8 @@ ul li {
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
+
+.story-list ul, .upcoming ul {
+  border-left: 2px solid #444;
+  padding-left: 1.5rem;
+}
