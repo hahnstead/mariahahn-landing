@@ -68,15 +68,24 @@ main {
   padding: 1rem;
 }
 
+
+/*  ── lineage grid ───────────────────────────────────────── */
+.lineage-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
 .lineage {
-  margin-top: 3rem;
-  padding: 1.5rem;
+  flex: 1 1 320px;      /* grow / shrink / base-width */
+  max-width: 420px;
   border-top: 1px solid #444;
-  font-family: Georgia, serif;
+  padding: 1.5rem;
 }
 
 .lineage h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
   color: #f5f5f5;
 }
@@ -89,4 +98,9 @@ main {
 .lineage li {
   margin-bottom: 0.75rem;
   color: #ccc;
+}
+
+/* Stack on narrow screens */
+@media (max-width: 800px) {
+  .lineage-grid { flex-direction: column; }
 }
