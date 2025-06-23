@@ -70,16 +70,14 @@ main {
 .lineage-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 2rem;
-  justify-content: center;
   margin-top: 2rem;
 }
 
 .lineage {
-  flex: 1 1 300px;      /* grow / shrink / base-width */
-  max-width: 500px;
-  border-top: 1px solid #444;
-  padding: 1.5rem;
+  flex: 1 1 300px;
+  max-width: 100%;
 }
 
 .lineage h2 {
