@@ -74,11 +74,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .lineage {
-  flex: 1 1 320px;      /* grow / shrink / base-width */
+  flex: 1 1 300px;      /* grow / shrink / base-width */
   max-width: 420px;
   border-top: 1px solid #444;
   padding: 1.5rem;
